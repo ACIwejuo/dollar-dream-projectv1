@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content=""IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dollar Dream Project | Daily Motivation</title>
-        <link rel="stylesheet" href="style.css" />
+        <title>Daily Motivation - Dollar Dream Project</title>
+         <!------------------ FAVICON ------------------>
+        <link rel="icon" type="image/png" href="./dream_images/Dollar Dreams Project v2.png">
+        <link rel="stylesheet" href="daily_style.css" />
         <link rel="stylesheet" href="mediaqueries.css" />
 
         <!-- Linking SwiperJS CSS -->
@@ -13,14 +15,23 @@
     </head>
     <body>
         <section id="intro">
-            <div class="top-header">
+                    <div class="top-header">
+                
+                <div class="logo-small">
+                    <button 
+                        class="logo"
+                        href="./index.html">
+                        <img src="dream_images/Dollar Dreams Project2.png"
+                        alt="nav logo"/> 
+                    </button>
+                </div>
                 <!-- DESKTOP NAVIGATION -->
                 <nav id="desktop-nav"> 
                     <div>
                         <ul class="nav-links">
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./daily_motiv.html" class="active">Daily Motivation</a></li>
-                            <li><a href="#finance">Personal Finance Tips and Tricks</a></li>
+                            <li><a href="./index.html" class="active">Home</a></li>
+                            <li><a href="./daily_motiv.html">Daily Motivation</a></li>
+                            <li><a href="./finance.html">Personal Finance Tips and Tricks</a></li>
                             <li><a href="#jobs">Job Opportunities</a></li>
                             <li><a href="#scholarships">Scholarships and Grants for Higher Education</a></li>
                             <li><a href="#resources">More Resources</a></li>
@@ -40,21 +51,213 @@
                         </div>
 
                         <div class="menu-links">
-                            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-                            <li><a href="#daily" onclick="toggleMenu()">Daily Motivation</a></li>
-                            <li><a href="#finance" onclick="toggleMenu()">Personal Finance Tips and Tricks</a></li>
+                            <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+                            <li><a href="./daily_motiv.html" onclick="toggleMenu()">Daily Motivation</a></li>
+                            <li><a href="./finance.html" onclick="toggleMenu()">Personal Finance Tips and Tricks</a></li>
                             <li><a href="#jobs" onclick="toggleMenu()">Job Opportunities</a></li>
                             <li><a href="#scholarships" onclick="toggleMenu()">Scholarships and Grants for Higher Education</a></li>
                             <li><a href="#resources" onclick="toggleMenu()">More Resources</a></li>
                         </div>
                     </div>
                 </nav>  
+            </div>>
+            
+            <div class="daily-title">
+                <h2>Daily Motivation</h2>
             </div>
-        
+
             <div class="landing-image">
-                <img src="dream_images/DDP BG base2.png"
+                <img src="./dream_images/motivation.png"
                 alt="Dollar Dream Landing Page Image" />
             </div>
         </section>
+
+        <section id="gallery">
+             <div class="gallery-content swiper">
+                <div class="image-wrapper">
+                    <ul class="image-list swiper-wrapper">
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily1.png" 
+                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily2.png"                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily3.png"                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily4.png"                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily5.png"                                alt="Gallery Image"
+                                class="gallery-image">
+            
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily6.png"                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily7.png"                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily8.png"                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily9.png"                                alt="Gallery Image"
+                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily10.png"                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                        <li class="image-item swiper-slide">
+                            <a href="#" class="image-link">
+                                <img src="./dream_images/daily11.png"                                class="gallery-image">
+                                
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!-- SOCIALS -->
+         <section id="socials">
+            <div class="social-title">
+                <h3>Social Links</h3>
+            </div>
+
+            <div class="social-details">
+                <div class="social-text">
+                    <p>
+                        Check Out Our Instagram!
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/dollardreamproject/"
+                    title="Instagram"
+                    class="insta-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="dream_images/Instagram_logo_2022_blue.png" /> 
+                </a>
+            </div>
+         </section>
+
+        <!-- FOOTER -->
+         <footer>
+            <p>
+              @ 2025 Dollar Dream Project. All Rights Reserved.  
+            </p>
+         </footer>
+
+        <!-- SWIPER SCRIPT-->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- SCROLL NAV BAR SCRIPT -->
+        <script>
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector(".top-header");
+                if (window.scrollY > 547.51) { 
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+        </script>
+
+        <!-- LINKING CUSTOM SWIPER SCRIPT -->
+        <script src="swiper_script.js"></script>
+
+        <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const about = document.getElementById("about");
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            about.classList.add("is-visible");
+                            observer.unobserve(about); // optional: only run once
+                        }
+                        });
+                    }, { threshold: 0.2 }); // 20% visible
+
+                    observer.observe(about);
+                });
+                document.addEventListener("DOMContentLoaded", () => {
+                    const gallery = document.getElementById("gallery");
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            gallery.classList.add("is-visible");
+                            observer.unobserve(gallery); // optional: only run once
+                        }
+                        });
+                    }, { threshold: 0.2 }); // 20% visible
+
+                    observer.observe(gallery);
+                });
+                document.addEventListener("DOMContentLoaded", () => {
+                    const contact = document.getElementById("contact");
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            contact.classList.add("is-visible");
+                            observer.unobserve(contact); // optional: only run once
+                        }
+                        });
+                    }, { threshold: 0.2 }); // 20% visible
+
+                    observer.observe(contact);
+                });
+
+        </script>
     </body>
     

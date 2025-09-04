@@ -45,41 +45,24 @@ button.logo img:hover {
     transform: scale(110%);
 }
 
-/* MAIN LOGO STYLING */
-
-.main-logo {
+/* MAIN TEXT STYLING */
+.daily-title {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 150px;
-}
-
-.main-logo img {
-    width: 30%;
-    height: 30%;
-    transition: 0.4s ease;
-}
-
-.main-logo img:hover {
-    transform: scale(110%);
-}
-
-.main-text {
-    position: absolute;
-    top: 620px;
-    left: 0;
-    width: 100%;
-    color: rgb(252 , 229, 205);
-    font-size: 50px;
+    top: 300px;
+    left: 350px;
+    color: rgb(205 , 208, 252);
+    font-size: 80px;
     text-align: center;
-    transition: 0.4s ease;
 }
 
-.main-text:hover {
-    transform: scale(110%);
-    text-shadow: 0 0 8px rgba(252,229,205,.9);
+.daily-title {
+    padding: 30px;
+    width: fit-content;
+    border: rgb(205 , 208, 252) 5px solid;
+    border-style: groove;
 }
+
+
 
 /* DESKTOP NAVIGATION */
 
@@ -96,7 +79,7 @@ button.logo img:hover {
 }
 
 .top-header.scrolled {
-    background: rgb(92, 51, 23);
+    background: rgb(25, 23, 92);
 
 }
 
@@ -120,7 +103,7 @@ nav {
 
 /* Color of the Navigation Text */
 a {
-    color: rgb(252 , 229, 205);;
+    color: rgb(205 , 208, 252);
     font-size: 18px;
     text-decoration: none;
     text-decoration-color: white;
@@ -129,7 +112,7 @@ a {
 
 /* Effect of the Navigation Text when Hovering over with Cursor*/
 a:hover {
-    text-shadow: 0 0 8px rgba(252,229,205,.9);
+    text-shadow: 0 0 8px rgba(205 , 208, 252,.9);
     text-decoration: underline;
     text-underline-offset: 1rem; 
     transform: scale(105%);
@@ -164,7 +147,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: rgb(252 , 229, 205);
+    background-color: rgb(205 , 208, 252);
     transition: all 0.3 ease-in-out;
 }
 
@@ -186,7 +169,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 18px;
-    color: rgb(252 , 229, 205);;
+    color: rgb(205 , 208, 252);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -231,94 +214,93 @@ a:hover {
 }
 .menu-links a:hover { background: #f4f4f4; }
 
+
 /* -------------------   LANDING IMAGES -----------------------*/
+
 .landing-image img {
     margin-top: -110px;
     width: 100vw;
     height: auto;
+
 }
 .landing-image {
     margin: 0 auto;
 }
 
-/* DAILY*/
-
-.daily-landing-image img {
-    margin-top: -110px;
-    width: 100vw;
-    height: auto;
-
-}
-.daily-landing-image {
-    margin: 0 auto;
+/* --------------------  MOTIVATION  --------------------------*/
+#gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    margin-bottom: 150px;
+    background: rgb(205 , 208, 252);
+    top: -10px;
 }
 
-
-
-/* ABOUT SECTION STYLING*/
-#about {
-    background-color: rgb(114, 68, 40);
-    width: 100vw;
-    height: 120vh;
-    margin: -10px;
-    padding: 50px;
+.gallery-content {
+    padding-bottom: 10px;
 }
 
-/* STYLING FOR h2 HERE*/
-.about-title h2{
-    color: rgb(252 , 229, 205);
-    font-size: 50px;
-    left: 0;
-    width: 100%;
+
+.image-wrapper {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.image-list .image-item {
+    list-style: none;
+}
+
+.image-list .image-item .image-link {
+    user-select: none;
     text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+} 
+
+
+.image-list .image-item .image-link:active {
+    cursor: grabbing;
 }
 
-.about-section {
-    display: flex;
+
+
+.image-list .image-link .gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+} 
+
+
+
+.image-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background-color: rgb(25, 23, 92);
 }
 
-.about-text {
-    margin-left: 100px;
-    margin-top: 150px
+.image-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
 }
 
-.about-text p {
-    color: rgb(252 , 229, 205);
-    font-size: 25px;
-    
-}
-.about-text p2 {
-    color: rgb(252 , 229, 205);
-    font-size: 25px;
-    font-weight: 800;
-}
-.about-text p2:hover {
-    text-shadow: 0 0 8px rgba(252,229,205,.9);
-}
-
-.portrait-image {
-    margin-left: 100px;
-    margin-top: 50px;
-}
-
-.portrait-image img {
-    width: 350px;      
-    height: auto; 
-    margin: 0 auto;
-    transition: 0.4s ease;
-}
-
-.portrait-image img:hover {
-    transform: scale(110%);
+.image-wrapper .swiper-button-prev::after,
+.image-wrapper .swiper-button-next::after {
+  color: rgb(25, 23, 92);    
+  font-size: 38px;
+  gap: 800px;             
 }
 
 /* SOCIALS STYLING */
 
 #socials {
-    background-color: rgb(92, 51, 23);
+    background-color: rgb(25, 23, 92);
     width: 100vw;
-    height: 70vh;
-    margin: 0 auto;
+    height: 50vh;
+    margin-top: -160px;
     padding: 50px;
 }
 
@@ -327,8 +309,13 @@ a:hover {
 }
 
 .social-text p {
-    color: rgb(252 , 229, 205);
+    color: rgb(205 , 208, 252);
     font-size: 25px;
+}
+
+.social-title h3 {
+    color: rgb(205 , 208, 252);
+    font-size: 30px;
 }
 
 .insta-button {
@@ -349,20 +336,17 @@ a:hover {
 
 .insta-button img:hover {
     transform: scale(110%);
-    box-shadow: 0 0 8px rgba(252,229,205,.9);
+    box-shadow: 0 0 8px rgba(205 , 208, 252,.9);
     border-radius: 50%;
-
-    
 }
 
 /* FOOTER STYLING */
 
 footer {
+    position: absolute;
     padding-top: 5px;
     text-align: center;
     width: 100vw;
     height: 5vh;
-    background: rgb(252 , 229, 205);
+    background: rgb(205 , 208, 252);
 }
-
-

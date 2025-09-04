@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content=""IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dollar Dream Project</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <section id="profile">
+            <div class="main-logo" >
+                <img src="dream_images/Dollar Dreams Project2.png" 
+                alt="main-logo"
+                onmouseover="this.src='dream_images/Dollar Dreams Project2_glow.png'"
+                onmouseout="this.src='dream_images/Dollar Dreams Project2.png'">
+
+            </div>
+        
+            <div class="main-text">
+                <p1>
+                    "Building Brighter Futures, One Dollar at a Time."
+                </p1>
+            </div>
+   
+            <div class="top-header">
+                <!-- DESKTOP NAVIGATION -->
+                <nav id="desktop-nav"> 
+                    <div>
+                        <ul class="nav-links">
+                            <li><a href="./index.html" class="active">Home</a></li>
+                            <li><a href="./daily_motiv.html">Daily Motivation</a></li>
+                            <li><a href="#finance">Personal Finance Tips and Tricks</a></li>
+                            <li><a href="#jobs">Job Opportunities</a></li>
+                            <li><a href="#scholarships">Scholarships and Grants for Higher Education</a></li>
+                            <li><a href="#resources">More Resources</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- MOBILE NAVIGATION -->
+                <nav id="hamburger-nav">
+                    <div class="hamburger-menu">
+                        <div class="hamburger-icon" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="menu-links">
+                            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                            <li><a href="#daily" onclick="toggleMenu()">Daily Motivation</a></li>
+                            <li><a href="#finance" onclick="toggleMenu()">Personal Finance Tips and Tricks</a></li>
+                            <li><a href="#jobs" onclick="toggleMenu()">Job Opportunities</a></li>
+                            <li><a href="#scholarships" onclick="toggleMenu()">Scholarships and Grants for Higher Education</a></li>
+                            <li><a href="#resources" onclick="toggleMenu()">More Resources</a></li>
+                        </div>
+                    </div>
+                </nav>  
+            </div>
+        
+            <div class="landing-image">
+                <img src="dream_images/DDP BG base2.png"
+                alt="Dollar Dream Landing Page Image" />
+            </div>
+
+        </section>
+           
+
+        <section id="about">
+
+            <div class="about-title">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-section">
+                <div class="portrait-image">
+                    <img src="./dream_images/PORT.png" 
+                    alt="About Us Banner" >
+                </div>
+
+                <div class="about-text">
+                   <p>
+                        Welcome to Dollar Dream Project, a platform dedicated to empowering  teens from minority backgrounds with the knowledge and skills to take control of their financial futures. 
+                        Founded by <p2>Amara Iwejuo</p2>, our goal is to help young people understand the basics of money management, investing, budgeting, and wealth building.
+                   </p>  
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- SOCIALS -->
+         <section id="socials">
+            <div class="about-title">
+                <h2>Social Links</h2>
+            </div>
+
+            <div class="social-details">
+                <div class="social-text">
+                    <p>
+                        Check Out Our Instagram!
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/dollardreamproject/"
+                    title="Instagram"
+                    class="insta-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="dream_images/Instagram_logo_2022_brown .png" /> 
+                </a>
+            </div>
+         </section>
+
+         <footer>
+            <p>
+              @ 2025 Dollar Dream Project. All Rights Reserved.  
+            </p>
+         </footer>
+        
+        
+       
+        <!-- SCRIPTS -->
+        <script src="script.js"></script>
+
+        <script>
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector(".top-header");
+                if (window.scrollY > 588.31) { 
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+        </script>
+
+    </body>

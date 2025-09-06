@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dollar Dream Project</title>
         <link rel="icon" type="image/png" href="./dream_images/Dollar Dreams Project v2.png">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="finance_style.css" />
         <link rel="stylesheet" href="mediaqueries.css" />
 
         <!-- Linking SwiperJS CSS -->
@@ -14,32 +14,25 @@
     </head>
     <body>
         <section id="profile">
-            <div class="main-logo" >
-                <img src="dream_images/Dollar Dreams Project2.png" 
-                alt="main-logo"
-                onmouseover="this.src='dream_images/Dollar Dreams Project2_glow.png'"
-                onmouseout="this.src='dream_images/Dollar Dreams Project2.png'">
-
-            </div>
-        
-            <div class="main-text">
-                <p1>
-                    "Building Brighter Futures, One Dollar at a Time."
-                </p1>
-            </div>
-
-            <div class="daily-slideshow">
-
-            </div>
-   
+              
             <div class="top-header">
+                <!-- NAV MENU LOGO -->
+                 <div class="logo-small">
+                    <button 
+                        class="logo"
+                        onclick="location.href='./index.html'">
+                        <img src="dream_images/Dollar Dreams Project3.png"
+                        alt="nav logo"/> 
+                    </button>
+                </div>
+
                 <!-- DESKTOP NAVIGATION -->
                 <nav id="desktop-nav"> 
                     <div>
                         <ul class="nav-links">
-                            <li><a href="./index.html" class="active">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="./daily_motiv.html">Daily Motivation</a></li>
-                            <li><a href="./finance.html">Personal Finance Tips and Tricks</a></li>
+                            <li><a href="./finance.html" class="active">Personal Finance Tips and Tricks</a></li>
                             <li><a href="#jobs">Job Opportunities</a></li>
                             <li><a href="#scholarships">Scholarships and Grants for Higher Education</a></li>
                             <li><a href="#resources">More Resources</a></li>
@@ -69,10 +62,131 @@
                     </div>
                 </nav>  
             </div>
+
+            <!-- MAIN TITLE -->
+             <div class="finance-title">
+                <h2>Personal Finance Tips and Tricks</h2>
+            </div>
         
             <div class="landing-image">
-                <img src="dream_images/finance.jpg"
+                <img src="dream_images/wallet2.png"
                 alt="Dollar Dream Landing Page Image" />
             </div>
 
         </section>
+
+        <section id="info-one">
+            <div class="bank-account">
+                    <button 
+                        class="bank-button" 
+                        onclick="openPopup()">
+                        <img src="./dream_images/bankaccount.jpg" 
+                        alt="Bank Account Image">
+                    </button>
+
+                    
+                        <div class="popup" id="popup">
+
+                            <div class="popup-text">
+                                <h3>
+                                How to Open a Bank Account
+                                </h3>
+                                
+                                <ol class="step-two">
+                                    <li>Choose a Bank and Account : Pick a bank and decide whether you want a checking account (for spending) or a savings account (for saving). </li>
+                                    <li>
+                                        Gather your documents:
+                                        <!-- closing </li> tag is not here! -->
+                                        <ul class="sublist">
+                                        <li>A valid ID (like a passport or driver's license).</li>
+                                        <li>Your Social Security Number (if required).</li>
+                                        <li>A parent or guardian (if under 18).</li>
+                                        </ul>
+                                    </li>
+                                    <li>Visit the Bank or Apply Online: Go to branch or visit the bank's website to fill out application.</li>
+                                    <li>Make a Deposit: Add the required minimum deposit (often $25 - $100) to activate your account.</li>
+                                    <li>Set up Online Banking: Sign up for online or mobile banking to manage your account.</li>
+                                </ol>
+                            </div>
+                            
+                            
+                            <div class="close-button" 
+                                onclick="closePopup()">
+                                <img src="./dream_images/CLOSE BUTTON.png" alt="Close"/>
+                            </div>
+                                
+                        </div>
+                </div>
+
+            <div class="personal-video">
+                    <iframe width="473.6" 
+                    height="266.5"
+                    src="https://www.youtube.com/embed/BV_XkanSiHI" 
+                    title="Top 5 Personal Finance Tips For Teenagers" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+
+        <!-- SOCIALS -->
+         <section id="socials">
+            <div class="social-title">
+                <h2>Social Links</h2>
+            </div>
+
+            <div class="social-details">
+                <div class="social-text">
+                    <p>
+                        Check Out Our Instagram!
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/dollardreamproject/"
+                    title="Instagram"
+                    class="insta-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="dream_images/Instagram_logo_2022_brown .png" /> 
+                </a>
+            </div>
+         </section>
+
+        <!-- FOOTER -->
+         <footer>
+            <p>
+              @ 2025 Dollar Dream Project. All Rights Reserved.  
+            </p>
+         </footer>
+
+        <!-------------------------------------------------------------------- SCRIPTS ------------------------------------------------------------------>
+
+        <!-- POPUP SCRIPT -->
+         <!-- SCROLL NAV BAR SCRIPT -->
+         <script>
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector(".top-header");
+                if (window.scrollY > 547.51) { 
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+         </script>
+
+        <!-- POPUP SCRIPT -->
+         <script>
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+                document.getElementById("ymessage").setAttribute("required", "true");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+                document.getElementById("ymessage").removeAttribute("required");
+            }
+        </script>

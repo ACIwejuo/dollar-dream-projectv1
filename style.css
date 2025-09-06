@@ -32,7 +32,7 @@ button.logo {
     border: none;       
     outline: none;     
     padding: 0;
-    
+    margin-left: 50px;   
 }
 
 button.logo img {
@@ -86,18 +86,17 @@ button.logo img:hover {
 .top-header {
     position: fixed;
     display: flex;
-    top: 20px;
-    left: 50px;
     width: 100vw;
     background: transparent;
     transition: background 0.3s ease;
     z-index: 1000;
-    gap: 50px;
+    gap: 70px;
 }
 
 .top-header.scrolled {
     background: rgb(92, 51, 23);
-
+    width: 100vw;
+    height: 19vh;
 }
 
 nav, 
@@ -317,8 +316,8 @@ a:hover {
 #socials {
     background-color: rgb(92, 51, 23);
     width: 100vw;
-    height: 70vh;
-    margin: 0 auto;
+    height: 50vh;
+    margin-top: -160px;
     padding: 50px;
 }
 
@@ -329,6 +328,11 @@ a:hover {
 .social-text p {
     color: rgb(252 , 229, 205);
     font-size: 25px;
+}
+
+.social-title h3 {
+    color: rgb(252 , 229, 205);
+    font-size: 30px;
 }
 
 .insta-button {
@@ -349,15 +353,14 @@ a:hover {
 
 .insta-button img:hover {
     transform: scale(110%);
-    box-shadow: 0 0 8px rgba(252,229,205,.9);
+    box-shadow: 0 0 8px rgba(252 , 229, 205,.9);
     border-radius: 50%;
-
-    
 }
 
 /* FOOTER STYLING */
 
 footer {
+    position: absolute;
     padding-top: 5px;
     text-align: center;
     width: 100vw;

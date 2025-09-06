@@ -32,7 +32,7 @@ button.logo {
     border: none;       
     outline: none;     
     padding: 0;
-    
+    margin-left: 50px;   
 }
 
 button.logo img {
@@ -45,12 +45,32 @@ button.logo img:hover {
     transform: scale(110%);
 }
 
+/* MAIN LOGO STYLING */
+
+.main-logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+}
+
+.main-logo img {
+    width: 30%;
+    height: 30%;
+    transition: 0.4s ease;
+}
+
+.main-logo img:hover {
+    transform: scale(110%);
+}
+
 /* MAIN TEXT STYLING */
 .daily-title {
     position: absolute;
     top: 300px;
     left: 350px;
-    color: rgb(205 , 208, 252);
+    color: rgb(252 , 229, 205);
     font-size: 80px;
     text-align: center;
 }
@@ -58,31 +78,27 @@ button.logo img:hover {
 .daily-title {
     padding: 30px;
     width: fit-content;
-    border: rgb(205 , 208, 252) 5px solid;
-    border-style: groove;
+    border: rgb(252 , 229, 205) 5px solid;
+    border-style: solid;
 }
-
-
 
 /* DESKTOP NAVIGATION */
 
 .top-header {
     position: fixed;
     display: flex;
-    top: 20px;
-    left: 50px;
     width: 100vw;
     background: transparent;
     transition: background 0.3s ease;
     z-index: 1000;
-    gap: 50px;
+    gap: 70px;
 }
 
 .top-header.scrolled {
-    background: rgb(25, 23, 92);
-
+    background: rgb(92, 51, 23);
+    width: 100vw;
+    height: 19vh;
 }
-
 nav, 
 .nav-links {
     display: flex;
@@ -103,7 +119,7 @@ nav {
 
 /* Color of the Navigation Text */
 a {
-    color: rgb(205 , 208, 252);
+    color: rgb(252 , 229, 205);
     font-size: 18px;
     text-decoration: none;
     text-decoration-color: white;
@@ -112,7 +128,7 @@ a {
 
 /* Effect of the Navigation Text when Hovering over with Cursor*/
 a:hover {
-    text-shadow: 0 0 8px rgba(205 , 208, 252,.9);
+    text-shadow: 0 0 8px rgba(252 , 229, 205,.9);
     text-decoration: underline;
     text-underline-offset: 1rem; 
     transform: scale(105%);
@@ -147,7 +163,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: rgb(205 , 208, 252);
+    background-color: rgb(252 , 229, 205);
     transition: all 0.3 ease-in-out;
 }
 
@@ -169,7 +185,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 18px;
-    color: rgb(205 , 208, 252);
+    color: rgb(252 , 229, 205);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -233,7 +249,7 @@ a:hover {
     padding-bottom: 100px;
     position: relative;
     margin-bottom: 150px;
-    background: rgb(205 , 208, 252);
+    background: rgb(252 , 229, 205);
     top: -10px;
 }
 
@@ -280,7 +296,7 @@ a:hover {
     height: 13px;
     width: 13px;
     opacity: 0.5;
-    background-color: rgb(25, 23, 92);
+    background-color: rgb(92, 51, 23);
 }
 
 .image-wrapper .swiper-pagination-bullet-active {
@@ -289,7 +305,7 @@ a:hover {
 
 .image-wrapper .swiper-button-prev::after,
 .image-wrapper .swiper-button-next::after {
-  color: rgb(25, 23, 92);    
+  color: rgb(92, 51, 23);    
   font-size: 38px;
   gap: 800px;             
 }
@@ -297,7 +313,7 @@ a:hover {
 /* SOCIALS STYLING */
 
 #socials {
-    background-color: rgb(25, 23, 92);
+    background-color: rgb(92, 51, 23);
     width: 100vw;
     height: 50vh;
     margin-top: -160px;
@@ -309,13 +325,16 @@ a:hover {
 }
 
 .social-text p {
-    color: rgb(205 , 208, 252);
+    color: rgb(252 , 229, 205);
     font-size: 25px;
 }
 
-.social-title h3 {
-    color: rgb(205 , 208, 252);
-    font-size: 30px;
+.social-title h2{
+    color: rgb(252 , 229, 205);
+    font-size: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .insta-button {
@@ -336,7 +355,7 @@ a:hover {
 
 .insta-button img:hover {
     transform: scale(110%);
-    box-shadow: 0 0 8px rgba(205 , 208, 252,.9);
+    box-shadow: 0 0 8px rgba(252 , 229, 205,.9);
     border-radius: 50%;
 }
 
@@ -348,5 +367,5 @@ footer {
     text-align: center;
     width: 100vw;
     height: 5vh;
-    background: rgb(205 , 208, 252);
+    background: rgb(252 , 229, 205);
 }

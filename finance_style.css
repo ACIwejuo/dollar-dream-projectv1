@@ -247,27 +247,31 @@ a:hover {
 /* -------------------   INFO SECTION 1 STYLING -------------------*/ 
 #info-one {
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     display: flex;
 }
 
 .bank-account {
     padding: 80px;
+    margin-left: 40px;
 }
 /* POPUP STYLING */
 
 .popup{
     display: flex;
+    width: 400px;
+    height: 500px;
     justify-content: center;
     background: rgb(252 , 229, 205);
     border-radius: 6px;
     position: absolute;
-    margin-top: 1000px;
+    margin-top: 930px;
     margin-left: 201px;
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 30px 30px;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
+    overflow-y: scroll;
 }
 
 .open-popup{
@@ -324,6 +328,256 @@ a:hover {
   margin-left: 1.25rem;
   padding-left: 1.25rem;
 }
+
+/* -------------------------------  50 20 30 RULE POPUP*/
+.fifty-twenty-thirty{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.popup-two{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    background: rgb(252 , 229, 205);
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 930px;
+    margin-left: 240px;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    overflow-y: scroll;
+}
+
+.open-popup-two{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+
+}
+
+.fifty-twenty-thirty img {
+    width: 400px;
+    height: auto;
+    transition: 0.4s ease;
+}
+.fifty-twenty-thirty img:hover {
+    transform: scale(110%);
+}
+
+.popup2-text {
+    display: block;
+    text-align: left;
+    justify-content: left;
+}
+
+.popup-two h3 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+.popup-two p {
+    font-size: 20px;
+}
+
+.popup-two ol {
+    max-width: 500px;
+    font-size: 20px;
+    margin: 30px 0 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+/* restore indentation */
+.breakdown, .sublist {
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.close-button img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: auto;
+    margin: 0;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+
+/* -------------------   INFO SECTION 2 STYLING -------------------*/ 
+#info-two {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.credit-card {
+    padding: 80px;
+    margin-left: 40px;
+}
+/* POPUP STYLING */
+
+.popup-three{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    background: rgb(252 , 229, 205);
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 930px;
+    margin-left: 201px;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    overflow-y: scroll;
+}
+
+.open-popup-three{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+
+}
+
+.visa-button img {
+    width: 400px;
+    height: auto;
+    transition: 0.4s ease;
+}
+.visa-button img:hover {
+    transform: scale(110%);
+}
+
+.close-button img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: auto;
+    margin: 0;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.popup3-text {
+    display: block;
+    text-align: left;
+    justify-content: left;
+}
+
+.popup-three h3 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+.popup-three ol {
+    max-width: 500px;
+    font-size: 20px;
+    margin: 30px 0 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+/* restore indentation */
+.comparison, .sublist {
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+/* -------------------------------  50 20 30 RULE POPUP*/
+.fifty-twenty-thirty{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.popup-two{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    background: rgb(252 , 229, 205);
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 930px;
+    margin-left: 240px;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    overflow-y: scroll;
+}
+
+.open-popup-two{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+
+}
+
+.fifty-twenty-thirty img {
+    width: 400px;
+    height: auto;
+    transition: 0.4s ease;
+}
+.fifty-twenty-thirty img:hover {
+    transform: scale(110%);
+}
+
+.popup2-text {
+    display: block;
+    text-align: left;
+    justify-content: left;
+}
+
+.popup-two h3 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+.popup-two p {
+    font-size: 20px;
+}
+
+.popup-two ol {
+    max-width: 500px;
+    font-size: 20px;
+    margin: 30px 0 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+/* restore indentation */
+.breakdown, .sublist {
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.close-button img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: auto;
+    margin: 0;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+/* -----------------------------------------    ELSE    ------------------------------------------*/
 
 
 div.contact-form {

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Opportunities - Dollar Dream Project</title>
+        <link rel="icon" type="image/png" href="./dream_images/Dollar Dreams Project v2.png">
+        <link rel="stylesheet" href="job_style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+
+        <!-- Linking SwiperJS CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <section id="profile">
+              
+            <div class="top-header">
+                <!-- NAV MENU LOGO -->
+                 <div class="logo-small">
+                    <button 
+                        class="logo"
+                        onclick="location.href='./index.html'">
+                        <img src="dream_images/Dollar Dreams Project3.png"
+                        alt="nav logo"/> 
+                    </button>
+                </div>
+
+                <!-- DESKTOP NAVIGATION -->
+                <nav id="desktop-nav"> 
+                    <div>
+                        <ul class="nav-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./daily_motiv.html">Daily Motivation</a></li>
+                            <li><a href="./finance.html" >Personal Finance Tips and Tricks</a></li>
+                            <li><a href="./jobs.html" class="active">Job Opportunities</a></li>
+                            <li><a href="#scholarships">Scholarships and Grants for Higher Education</a></li>
+                            <li><a href="#resources">More Resources</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- MOBILE NAVIGATION -->
+                <nav id="hamburger-nav">
+                    <div class="hamburger-menu">
+                        <div class="hamburger-icon" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="menu-links">
+                            <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+                            <li><a href="./daily_motiv.html" onclick="toggleMenu()">Daily Motivation</a></li>
+                            <li><a href="./finance.html" onclick="toggleMenu()">Personal Finance Tips and Tricks</a></li>
+                            <li><a href="./jobs.html" onclick="toggleMenu()">Job Opportunities</a></li>
+                            <li><a href="#scholarships" onclick="toggleMenu()">Scholarships and Grants for Higher Education</a></li>
+                            <li><a href="#resources" onclick="toggleMenu()">More Resources</a></li>
+                        </div>
+                    </div>
+                </nav>  
+            </div>
+
+            <!-- MAIN TITLE -->
+             <div class="job-title">
+                <h2>Job Opportunities</h2>
+            </div>
+        
+            <div class="landing-image">
+                <img src="dream_images/job2.png"
+                alt="Dollar Dream Landing Page Image" />
+            </div>
+
+        </section>
+
+        <!---------------------  DIFFERENT TYPES OF JOBS ------------>
+        <section id="job-types">
+            <!-- SECTION TITLE-->
+            <div class="jobtypes-title" >
+                <h2>Job categories</h2>
+            </div>
+
+            <div class="job-options">
+    <!-- ENTRY LEVEL JOBS -->
+                <div class="highschool">
+                    <button 
+                        class="hs-button" 
+                        onclick="openPopup()">
+                        <img src="./dream_images/highschool.png" 
+                        alt="Highschool Options Image">
+                    </button>
+
+                    
+                        <div class="popup" id="popup">
+
+                            <div class="popup-text">
+                                <h3>
+                                Entry Level Job Opportunities
+                                </h3>
+
+                                <p>
+                                    Jobs like these include being a cashier at a grocery store, stock associate in retail, fast-food crew member.
+                                </p>
+                                
+                                <ol class="step-two">
+                                    <li><p4>Fast-Food Options:</p4>
+                                        <!-- closing </li> tag is not here! -->
+                                        <ul class="sublist">
+                                            <li>Chic-Fil-A</li>
+                                            <li>McDonalds</li>
+                                            <li>Subway</li>
+                                            <li>Taco Bell</li>
+                                        
+                                        </ul>
+                                    </li>
+
+                                    <br>
+                                    
+                                    <li><p4>Retail Options:</p4>
+                                        <!-- closing </li> tag is not here! -->
+                                        <ul class="sublist">
+                                            <li>Old Navy</li>
+                                            <li>Target</li>
+                                            <li>Walmart</li>
+                                            <li>Ross</li>
+                                        
+                                        </ul>
+                                    </li>
+                                    
+                                </ol>
+                            </div>
+                            
+                            
+                            <div class="close-button" 
+                                onclick="closePopup()">
+                                <img src="./dream_images/CLOSE BUTTON.png" alt="Close"/>
+                            </div>
+                                
+                        </div>
+                </div>
+                
+                <!-- SUMMER AND INTERN JOBS -->
+                <div class="summer">
+                    <button 
+                        class="summer-button" 
+                        onclick="openPopup2()">
+                        <img src="./dream_images/summer.png" 
+                        alt="Summer Options Image">
+                    </button>
+
+                    
+                        <div class="popup2" id="popup2">
+
+                            <div class="popup2-text">
+                                <h3>
+                                    Summer Jobs and Internships
+                                </h3>
+
+                                <p4>
+                                    Jobs like these include lifeguard positions at local pools, being a camp counselor at the YMCA or local youth camps and more!
+                                </p4>
+                                
+                                <p>
+                                    YMCA <br> Red Cross <br> Bank of America Student Leader
+                                </p>
+
+                            </div>
+                            
+                            
+                            <div class="close-button" 
+                                onclick="closePopup2()">
+                                <img src="./dream_images/CLOSE BUTTON.png" alt="Close"/>
+                            </div>
+                                
+                        </div>
+                </div>
+
+                <!-- ENTREPRENEURSHIP -->
+                <div class="enterpreneur">
+                    <button 
+                        class="enterpreneur-button" 
+                        onclick="openPopup3()">
+                        <img src="./dream_images/entepreneur.png" 
+                        alt="Entrepreneurship Image">
+                    </button>
+
+                    
+                        <div class="popup3" id="popup3">
+
+                            <div class="popup3-text">
+                                <h3>
+                                    Summer Jobs and Internships
+                                </h3>
+
+                                <p>
+                                    Dollar Dream Project wholeheartedly supports young entrepreneurs!<br><br>
+                                    Whether you like reselling clothes, sneakers, or gadgets of platforms like Depop, eBay, or Poshmark never be too shy to display your creativity!<br><br>
+                                    To promote your business on our website fill out this form!
+                                </p>
+                                
+
+                            </div>
+                            
+                            
+                            <div class="close-button" 
+                                onclick="closePopup3()">
+                                <img src="./dream_images/CLOSE BUTTON.png" alt="Close"/>
+                            </div>
+                                
+                        </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <!-- SOCIALS -->
+         <section id="socials">
+            <div class="social-title">
+                <h2>Social Links</h2>
+            </div>
+
+            <div class="social-details">
+                <div class="social-text">
+                    <p>
+                        Check Out Our Instagram!
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/dollardreamproject/"
+                    title="Instagram"
+                    class="insta-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="dream_images/Instagram_logo_2022_brown .png" /> 
+                </a>
+            </div>
+         </section>
+
+        <!-- FOOTER -->
+         <footer>
+            <p>
+              @ 2025 Dollar Dream Project. All Rights Reserved.  
+            </p>
+         </footer>
+
+
+         <!-- POPUP SCRIPT -->
+        <script>
+            const popup1 = document.getElementById("popup");
+            const popup2 = document.getElementById("popup2");
+            const popup3 = document.getElementById("popup3");
+
+            function openPopup(){
+                popup1.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup1.classList.remove("open-popup");
+            }
+            function openPopup2(){
+                popup2.classList.add("open-popup2");
+            }
+            function closePopup2(){
+                popup2.classList.remove("open-popup2");
+            }
+            function openPopup3(){
+                popup3.classList.add("open-popup3");
+            }
+            function closePopup3(){
+                popup3.classList.remove("open-popup3");
+            }
+    
+        
+
+            // Close when clicked outside
+            window.addEventListener("click", function(e){
+                    // Check for popup 1
+                    if (popup1.classList.contains("open-popup") && !popup1.contains(e.target) && !e.target.closest(".hs-button")){
+                        closePopup();
+                    }
+                    // Check for popup 2
+                    if (popup2.classList.contains("open-popup2") && !popup2.contains(e.target) && !e.target.closest(".summer-button")){
+                        closePopup2();
+                    }
+                    // Check for popup 3
+                    if (popup3.classList.contains("open-popup3") && !popup3.contains(e.target) && !e.target.closest(".enterpreneur-button")){
+                        closePopup3();
+                    }
+            });
+        </script>
+
+    </body>
+</html>

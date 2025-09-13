@@ -10,11 +10,18 @@
 
 body {
   font-family: "Merriweather", sans-serif;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+html, body {
+    height: 100%;
+}
+
 
 /* TRANSITION */
 
@@ -87,7 +94,7 @@ button.logo img:hover {
 .top-header {
     position: fixed;
     display: flex;
-    width: 100vw;
+    width: 100%;
     background: transparent;
     transition: background 0.3s ease;
     z-index: 1000;
@@ -96,7 +103,7 @@ button.logo img:hover {
 
 .top-header.scrolled {
     background: rgb(92, 51, 23);
-    width: 100vw;
+    width: 100%;
     height: 19vh;
 }
 
@@ -236,7 +243,7 @@ a:hover {
 
 .landing-image img {
     margin-top: -110px;
-    width: 100vw;
+    width: 100%;
     height: auto;
 
 }
@@ -246,9 +253,10 @@ a:hover {
 
 /* -------------------   INFO SECTION 1 STYLING -------------------*/ 
 #info-one {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
+    background: rgb(252 , 229, 205);
 }
 
 .bank-account {
@@ -305,6 +313,7 @@ a:hover {
     display: block;
     text-align: left;
     justify-content: left;
+    max-width: 500px;
 }
 
 .popup h3 {
@@ -413,9 +422,11 @@ a:hover {
 
 /* -------------------   INFO SECTION 2 STYLING -------------------*/ 
 #info-two {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    margin-top: -150px;
     display: flex;
+    background: rgb(252 , 229, 205);
 }
 
 .credit-card {
@@ -432,20 +443,20 @@ a:hover {
     background: rgb(252 , 229, 205);
     border-radius: 6px;
     position: absolute;
-    margin-top: 930px;
+    margin-top: 1550px;
     margin-left: 201px;
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 30px 30px;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
     overflow-y: scroll;
+    z-index: 2000;
 }
 
 .open-popup-three{
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-
 }
 
 .visa-button img {
@@ -490,19 +501,24 @@ a:hover {
     padding-right: 30px;
 }
 
+.popup-three p {
+    font-size: 20px;
+}
+
+
 /* restore indentation */
 .comparison, .sublist {
   margin-left: 1.25rem;
   padding-left: 1.25rem;
 }
 
-/* -------------------------------  50 20 30 RULE POPUP*/
-.fifty-twenty-thirty{
+/* -------------------------------  FUTURE GOALS POPUP*/
+.future-goals {
     margin-left: 40px;
     margin-top: 40px;
 }
 
-.popup-two{
+.popup-four{
     display: flex;
     width: 400px;
     height: 500px;
@@ -510,7 +526,7 @@ a:hover {
     background: rgb(252 , 229, 205);
     border-radius: 6px;
     position: absolute;
-    margin-top: 930px;
+    margin-top: 1550px;
     margin-left: 240px;
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 30px 30px;
@@ -519,40 +535,44 @@ a:hover {
     overflow-y: scroll;
 }
 
-.open-popup-two{
+.open-popup-four{
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-
 }
 
-.fifty-twenty-thirty img {
+.future-button {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.future-button img {
     width: 400px;
     height: auto;
     transition: 0.4s ease;
 }
-.fifty-twenty-thirty img:hover {
+.future-button img:hover {
     transform: scale(110%);
 }
 
-.popup2-text {
+.popup4-text {
     display: block;
     text-align: left;
     justify-content: left;
 }
 
-.popup-two h3 {
+.popup-four h3 {
     font-size: 35px;
     font-weight: 500;
     margin: 30px 0 10px;
     padding-left: 25px;
     padding-right: 30px;
 }
-.popup-two p {
+.popup-four p {
     font-size: 20px;
 }
 
-.popup-two ol {
+.popup-four ol {
     max-width: 500px;
     font-size: 20px;
     margin: 30px 0 10px;
@@ -560,8 +580,15 @@ a:hover {
     padding-right: 30px;
 }
 
+.popup-four p5 {
+    font-style: italic;
+}
+.popup-four p6 {
+    font-weight: 700;
+}
+
 /* restore indentation */
-.breakdown, .sublist {
+.future, .sublist {
   margin-left: 1.25rem;
   padding-left: 1.25rem;
 }
@@ -577,59 +604,9 @@ a:hover {
     opacity: 50%;
 }
 
-/* -----------------------------------------    ELSE    ------------------------------------------*/
+/* -----------------------------------------    VIDEOS    ------------------------------------------*/
 
 
-div.contact-form {
-    text-align: center;
-    align-items: center;
-    gap: 2px;
-    margin: 0 auto;
-    flex-direction: column;
-    display: flex;
-}
-
-
-label,
-input {
-  display: table-cell;
-  margin-bottom: 10px;
-}
-
-input,
-textarea,
-button {
-  font-family: inherit;  /* inherit from body (Poppins in your case) */
-  font-size: 0.9rem;       /* match the text size */
-  color: inherit;        /* match text color */
-}
-
-label {
-  padding-right: 10px;
-}
-
-
-.submit-button {
-    font-weight: 700;
-    margin: 30px 0 10px;
-    transition: all 300ms ease;
-    padding: 0.5rem;
-    width: 15rem;
-    border-radius: 2rem;
-    border: rgb(0, 0, 0) 0.1rem solid;
-    background: rgb(255, 255, 255);
-    color: rgb(132, 58, 58);
-    font-size: 1.25rem;
-    box-shadow: 0 5px 5px rgba(132, 58, 58, 0.2);
-
-}
-.submit-button:hover {
-    cursor: pointer;
-}
-.submit-button:hover {
-    background: rgb(132, 58, 58);
-    color: rgb(255, 211, 211);
-}
 
 
 /* YOUTUBE VIDEO 1 STYLING */
@@ -641,12 +618,100 @@ label {
     transform: scale(110%);
 }
 
+/* YOUTUBE VIDEO 2 STYLING */
+.personal2-video {
+    padding-top: 80px;
+    transition: 0.4s ease;
+}
+.personal2-video:hover {
+    transform: scale(110%);
+}
+
+
+/* --------------------------------   POP QUIZ -------------------------------- */
+#pop-quiz {
+    background-color: rgb(114, 68, 40);
+    width: 100%;
+    height: 80vh;
+    padding: 50px;
+}
+
+.quiz-main {
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(252 , 229, 205);
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(92, 51, 23, 0.2);
+}
+
+.quiz-title h2{
+    color: rgb(252 , 229, 205);
+    font-size: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#question {
+    margin-bottom: 50px;
+}
+
+#options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;  
+    align-items: center;
+}
+
+#options.center-result {
+  display: flex;
+  justify-content: center;
+}
+
+#options .option { 
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(92,51,23,.25);
+    background: rgb(114, 68, 40);
+    color: rgb(252 , 229, 205);
+    cursor: pointer;
+    font: inherit;
+    transition: 0.4s ease;
+}
+#options .option:hover { 
+    box-shadow: 0 0 8px rgba(92,51,23,.6); 
+    transform: scale(110%);
+}
+
+
+
+button.submit {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(114, 68, 40);
+    color: rgb(114, 68, 40);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.submit:hover {
+    background-color: rgb(252 , 229, 205);
+}
+
 
 /* SOCIALS STYLING */
 
 #socials {
     background-color: rgb(92, 51, 23);
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     margin-top: -10px;
     padding: 50px;
@@ -695,10 +760,14 @@ label {
 /* FOOTER STYLING */
 
 footer {
-    position: absolute;
-    padding-top: 5px;
+    margin-top: auto;
+    position: relative;
+    padding: 10px;    
     text-align: center;
-    width: 100vw;
-    height: 5vh;
+    width: 100%;
     background: rgb(252 , 229, 205);
+}
+
+footer p {
+    margin: 0;
 }

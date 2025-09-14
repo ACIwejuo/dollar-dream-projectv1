@@ -259,7 +259,7 @@ a:hover {
 .jobtypes-title {
     color: rgb(252 , 229, 205);
     background: rgb(92, 51, 23);
-    font-size: 50px;
+    font-size: 35px;
     left: 0;
     width: 100%;
     text-align: center;
@@ -296,7 +296,7 @@ a:hover {
     background: rgb(252 , 229, 205);
     border-radius: 6px;
     position: absolute;
-    margin-top: 1150px;
+    margin-top: 1250px;
     margin-left: 201px;
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 30px 30px;
@@ -312,7 +312,7 @@ a:hover {
     background: rgb(252 , 229, 205);
     border-radius: 6px;
     position: absolute;
-    margin-top: 1150px;
+    margin-top: 1250px;
     margin-left: 201px;
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 30px 30px;
@@ -327,7 +327,7 @@ a:hover {
     background: rgb(252 , 229, 205);
     border-radius: 6px;
     position: absolute;
-    margin-top: 1150px;
+    margin-top: 1250px;
     margin-left: 201px;
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 30px 30px;
@@ -419,7 +419,100 @@ a:hover {
   padding-left: 1.25rem;
 }
 
-/* SOCIALS STYLING */
+/* ------------------- MAP STYLING ------------------- */
+#map-section {
+    align-items: center;
+    text-align: center;
+    background: rgb(252 , 229, 205);
+}
+
+.map-title {
+    color: rgb(252 , 229, 205);
+    background: rgb(92, 51, 23);
+    font-size: 35px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.map {
+    padding: 80px;
+}
+
+/* ------------------- EXTRAS STYLING ------------------- */
+#extras {
+    background: rgb(252 , 229, 205);
+    height: 120vh;
+}
+
+.videos {
+    display: flex;
+}
+
+.extras-title {
+    color: rgb(252 , 229, 205);
+    background: rgb(92, 51, 23);
+    font-size: 35px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.vid-one,
+.vid-two,
+.vid-three {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 70px;
+    transition: 0.4s ease;
+}
+.vid-one:hover,
+.vid-two:hover,
+.vid-three:hover {
+    transform: scale(110%);
+}
+
+.job-boards {
+    font-size: 35px;
+    text-align: center;
+    color: rgb(92, 51, 23);
+}
+
+    .links {
+    text-align: center;
+    padding: 80px;
+    gap: 40px;
+    
+}
+
+.link-button,
+.indeed-button {
+    width: 80px;
+    margin: 0 50px;     
+    height: auto;
+    background: none;
+    border-radius: 0%;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.link-button img,
+.indeed-button img {
+    width: 80px;
+    height: auto;
+    transition: 0.2s ease;
+}
+
+.link-button img:hover,
+.indeed-button img:hover {
+    transform: scale(110%);
+    box-shadow: 0 0 8px rgba(252 , 229, 205,.9);
+    border-radius: 50%;
+}
+
+
+/* ------------------- SOCIALS STYLING ------------------- */
 
 #socials {
     background-color: rgb(92, 51, 23);

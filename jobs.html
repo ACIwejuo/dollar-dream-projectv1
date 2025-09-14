@@ -117,7 +117,7 @@
                                     </li>
 
                                     <br>
-                                    
+
                                     <li><p4>Retail Options:</p4>
                                         <!-- closing </li> tag is not here! -->
                                         <ul class="sublist">
@@ -212,6 +212,97 @@
                         </div>
                 </div>
             </div>
+
+        </section>
+
+        <!---------------------------------   MAP SECTION -------------------------------------------->
+        <section id="map-section">
+            
+            <div class="map-title">
+                <h2>Find a Location Near You</h2>
+            </div>
+            
+            
+            
+            
+                <!-- MAP -->
+                 <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12783721.427106785!2d-95.19038361327475!3d39.553285025081465!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1757730531053!5m2!1sen!2sus" 
+                        width="600" height="450" style="border: 0;" 
+                        allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                 </div>
+                 
+
+        </section>
+
+        <section id="extras">
+            <div class="extras-title">
+                <h2>Extra Resources </h2>
+            </div>
+            
+            <div class="videos">
+                <!-- Resume Template Vid-->
+                <div class="vid-one">
+                    <iframe 
+                        width="473.6" height="266.5" 
+                        src="https://www.youtube.com/embed/7apj4sVvbro" 
+                        title="How to Make An Impressive Resume for FREE (in 2024)" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Cover Letter Vid-->
+                <div class="vid-two">
+                    <iframe 
+                        width="473.6" height="266.5" 
+                        src="https://www.youtube.com/embed/hrZSfMly_Ck" 
+                        title="How to Write a Cover Letter" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Interview Tips Vid -->
+                 <div class="vid-three">
+                    <iframe 
+                        width="473.6" height="266.5" 
+                        src="https://www.youtube.com/embed/88Mwb2bnOMk" 
+                        title="Job Interview Tips for Teens" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                 </div>
+            </div>
+
+            
+            <!-- JOB BOARDS -->
+            <div class="job-boards">
+                <h5>Check out these Job Boards!</h5>
+            </div>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/feed/"
+                    title="LinkedIn"
+                    class="link-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="dream_images/linkedin.png" /> 
+                </a>
+                <a href="https://www.indeed.com/?from=gnav-homepage"
+                    title="Indeed"
+                    class="indeed-button"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="dream_images/indeed.png" /> 
+                </a>
+            </div>
             
 
         </section>
@@ -247,7 +338,20 @@
          </footer>
 
 
-         <!-- POPUP SCRIPT -->
+         <!--------------------------------------    POPUP SCRIPT   ---------------------------------------->
+
+        <!-- SCROLL NAV BAR SCRIPT -->
+        <script>
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector(".top-header");
+                if (window.scrollY > 547.51) { 
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            });
+        </script>
+
         <script>
             const popup1 = document.getElementById("popup");
             const popup2 = document.getElementById("popup2");

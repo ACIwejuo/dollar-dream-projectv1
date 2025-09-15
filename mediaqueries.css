@@ -1,4 +1,45 @@
-@media (max-width: 1200px) {
+/* DESKTOP */
+@media (max-width: 1440px) {
+
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  
+
+  /* HOME PAGE */
+  #desktop-nav { display: none; }
+  #hamburger-nav { display: flex; }
+
+  .hamburger-icon {
+    margin-left: 680px;
+  }
+
+  button.logo img {
+    width: 100px;
+    height: auto;
+    transition: 0.4s ease;
+  }
+
+  .top-header {
+    height: 100px;
+  }
+
+
+
+  .daily-landing-image img {
+    width: 100%;
+  }
+  
+
+}
+
+
+/* PHONE */
+@media (max-width: 600px) {
   #desktop-nav { display: none; }
   #hamburger-nav { display: flex; }
 }
+
+
+

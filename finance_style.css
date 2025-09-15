@@ -93,9 +93,10 @@ button.logo img:hover {
 
 .top-header {
     position: fixed;
+    height: 150px;
     display: flex;
     width: 100%;
-    background: transparent;
+    background: rgba(92, 51, 23, 0.4);
     transition: background 0.3s ease;
     z-index: 1000;
     gap: 70px;
@@ -136,10 +137,10 @@ a {
 
 /* Effect of the Navigation Text when Hovering over with Cursor*/
 a:hover {
-    text-shadow: 0 0 8px rgba(205 , 208, 252,.9);
-    text-decoration: underline;
-    text-underline-offset: 1rem; 
-    transform: scale(105%);
+  text-shadow: 0 0 8px rgba(205, 208, 252, .9);
+  text-decoration: underline;
+  text-underline-offset: 3px;   /* much closer */
+  transform: scale(105%);
 }
 
 /* WHILE THE PAGE IS ACTIVE, BOLDEN ITS NAV MENU*/

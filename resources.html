@@ -2,12 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content=""IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Dollar Dream Project</title>
-        <!------------------ FAVICON ------------------>
+        <title>Job Opportunities - Dollar Dream Project</title>
         <link rel="icon" type="image/png" href="./dream_images/Dollar Dreams Project v2.png">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="resources_style.css" />
         <link rel="stylesheet" href="mediaqueries.css" />
 
         <!-- Linking SwiperJS CSS -->
@@ -15,43 +14,27 @@
     </head>
     <body>
         <section id="profile">
-            <div class="main-logo" >
-                <img src="dream_images/Dollar Dreams Project2.png" 
-                alt="main-logo"
-                onmouseover="this.src='dream_images/Dollar Dreams Project2_glow.png'"
-                onmouseout="this.src='dream_images/Dollar Dreams Project2.png'">
-
-            </div>
-
-            
-        
-            <div class="main-text">
-                <p1>
-                    "Building Brighter Futures, One Dollar at a Time."
-                </p1>
-            </div>
-
-
-   
+              
             <div class="top-header">
-                
-                <div class="logo-small">
+                <!-- NAV MENU LOGO -->
+                 <div class="logo-small">
                     <button 
                         class="logo"
                         onclick="location.href='./index.html'">
-                        <img src="dream_images/Dollar Dreams Project2.png"
+                        <img src="dream_images/Dollar Dreams Project3.png"
                         alt="nav logo"/> 
                     </button>
                 </div>
+
                 <!-- DESKTOP NAVIGATION -->
                 <nav id="desktop-nav"> 
                     <div>
                         <ul class="nav-links">
-                            <li><a href="./index.html" class="active">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="./daily_motiv.html">Daily Motivation</a></li>
-                            <li><a href="./finance.html">Personal Finance Tips and Tricks</a></li>
+                            <li><a href="./finance.html" >Personal Finance Tips and Tricks</a></li>
                             <li><a href="./jobs.html">Job Opportunities</a></li>
-                            <li><a href="./scholarship.html">Scholarships and Grants for Higher Education</a></li>
+                            <li><a href="./scholarship.html" class="active" >Scholarships and Grants for Higher Education</a></li>
                             <li><a href="./resources.html">More Resources</a></li>
                         </ul>
                     </div>
@@ -79,40 +62,57 @@
                     </div>
                 </nav>  
             </div>
+
+            <!-- MAIN TITLE -->
+             <div class="job-title">
+                <h2>Resources</h2>
+            </div>
         
             <div class="landing-image">
-                <img src="dream_images/DDP BG base2.png"
+                <img src="./dream_images/DDP BG base2.png"
                 alt="Dollar Dream Landing Page Image" />
             </div>
-
         </section>
-           
 
-        <section id="about">
+        <!-- SUPPORTING LOCAL BUSINESS -->
+         <section id="local-business">
 
-            <div class="about-title">
-                <h2>About Me</h2>
+            <div class="local-title">
+                <h2>Supporting Local Businesses</h2>
             </div>
 
-            <div class="about-section">
-                <div class="portrait-image">
-                    <img src="./dream_images/PORT.png" 
-                    alt="About Us Banner" >
+            <div class="business-form">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf0P87IyfBrRpst6F6btq5HJWpCrwr0dMHIcVgCXF-QNJraLQ/viewform?embedded=true" 
+                    width="640" height="935" frameborder="0" marginheight="0" marginwidth="0">Loading…
+                </iframe>
+            </div>
+
+         </section>
+
+        <!-- ACKNOWLEDGEMENTS -->
+         <section id="acknowledgements">
+
+            <div class="ack">
+                <h2>Acknowledgements</h2>
+            </div>
+
+            <div class="ack-details">
+
+                <div class="ack-image">
+                    <img src="./dream_images/IMG_1335.JPG" alt="A Iwejuo Image">
                 </div>
 
-                <div class="about-text">
-                   <p>
-                        Welcome to Dollar Dream Project, a platform dedicated to empowering  teens from minority backgrounds with the knowledge and skills to take control of their financial futures. 
-                        Founded by <p2>Amara Iwejuo</p2>, our goal is to help young people understand the basics of money management, investing, budgeting, and wealth building.
-                   </p>  
+                <div class="text">
+                    <p style="font-size: 25px; color: rgb(252, 229, 205); font-weight: 700;">Web Development: Anthony Iwejuo</p>
                 </div>
+
             </div>
             
-        </section>
 
-        <!-- SOCIALS -->
+         <!-- SOCIALS -->
          <section id="socials">
-            <div class="about-title">
+            <div class="social-title">
                 <h2>Social Links</h2>
             </div>
 
@@ -139,16 +139,15 @@
               @ 2025 Dollar Dream Project. All Rights Reserved.  
             </p>
          </footer>
-        
-        
-       
-        <!-- SCRIPTS -->
-        <script src="script.js"></script>
 
+
+         <!--------------------------------------    POPUP SCRIPT   ---------------------------------------->
+
+        <!-- SCROLL NAV BAR SCRIPT -->
         <script>
             window.addEventListener("scroll", function () {
                 const header = document.querySelector(".top-header");
-                if (window.scrollY > 488.31) { 
+                if (window.scrollY > 547.51) { 
                     header.classList.add("scrolled");
                 } else {
                     header.classList.remove("scrolled");
@@ -156,6 +155,6 @@
             });
         </script>
 
-        
 
     </body>
+</html>

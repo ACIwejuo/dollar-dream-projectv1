@@ -10,6 +10,8 @@
 
 body {
   font-family: "Merriweather", sans-serif;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 html {
@@ -19,6 +21,11 @@ html {
     overflow-x: hidden;      /* hides accidental overspill */
     margin: 0;
 }
+
+html, body {
+    height: 100%;
+}
+
 
 /* TRANSITION */
 
@@ -69,21 +76,24 @@ button.logo img:hover {
     transform: scale(110%);
 }
 
-.main-text {
-    position: absolute;
-    top: 620px;
-    left: 0;
-    width: 100%;
-    color: rgb(252 , 229, 205);
-    font-size: 50px;
-    text-align: center;
-    transition: 0.4s ease;
+/* MAIN TEXT STYLING */
+.job-title {
+  position: absolute;
+  top: 300px;              /* adjust vertical placement */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 50%;              /* make it span wider across the screen */
+  text-align: center;      /* keep text centered inside */
+  
+  color: rgb(252, 229, 205);
+  font-size: 70px;
+  padding: 20px;
+  border: 5px groove rgb(252, 229, 205);
 }
 
-.main-text:hover {
-    transform: scale(110%);
-    text-shadow: 0 0 8px rgba(252,229,205,.9);
-}
+
+
 
 /* DESKTOP NAVIGATION */
 
@@ -100,7 +110,7 @@ button.logo img:hover {
 
 .top-header.scrolled {
     background: rgb(92, 51, 23);
-    width: 100vw;
+    width: 100%;
     height: 19vh;
 }
 
@@ -115,6 +125,8 @@ nav {
     height: 17vh;
 }
 
+
+
 /* Removes the bulletpoints and adjusts font size (rem) */
 .nav-links {
     gap: 2rem;
@@ -124,7 +136,7 @@ nav {
 
 /* Color of the Navigation Text */
 a {
-    color: rgb(252 , 229, 205);;
+    color: rgb(252 , 229, 205);
     font-size: 18px;
     text-decoration: none;
     text-decoration-color: white;
@@ -169,7 +181,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: rgb(252 , 229, 205);
+    background-color: rgb(205 , 208, 252);
     transition: all 0.3 ease-in-out;
 }
 
@@ -191,7 +203,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 18px;
-    color: rgb(252 , 229, 205);;
+    color: rgb(205 , 208, 252);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -236,94 +248,102 @@ a:hover {
 }
 .menu-links a:hover { background: #f4f4f4; }
 
+
 /* -------------------   LANDING IMAGES -----------------------*/
+
 .landing-image img {
     margin-top: -110px;
-    width: 100vw;
+    width: 99.45vw;
     height: auto;
+
 }
 .landing-image {
     margin: 0 auto;
 }
 
-/* DAILY*/
-
-.daily-landing-image img {
-    margin-top: -110px;
-    width: 100%;
-    height: auto;
-
-}
-.daily-landing-image {
-    margin: 0 auto;
-}
-
-
-
-/* ------------------------------------   ABOUT SECTION STYLING   ------------------------------------*/
-#about {
+/* -------------------      LOCAL BUSINESS STYLING ------------------- */
+#local-business {
     background-color: rgb(114, 68, 40);
-    width: 101%;
-    height: 120vh;
+    width: 100vw;
+    height: 160vh;
     margin: -10px;
-    padding: 50px;
 }
 
-/* STYLING FOR h2 HERE*/
-.about-title h2{
+.local-title {
+    background: rgb(92, 51, 23);
+    padding: 60px;
+    width: 100%;
+    
+}
+
+.local-title h2{
     color: rgb(252 , 229, 205);
     font-size: 50px;
-    left: 0;
-    width: 100%;
     text-align: center;
 }
 
-.about-section {
+.business-form {
+    padding: 80px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* -------------------      LOCAL BUSINESS STYLING ------------------- */
+#acknowledgements {
+    background-color: rgb(92, 51, 23);
+    width: 100vw;
+    margin: -10px;
 }
 
-.about-text {
-    margin-left: 100px;
-    margin-top: 150px
+.ack-details {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 300px;
 }
 
-.about-text p {
-    color: rgb(252 , 229, 205);
-    font-size: 25px;
-    
-}
-.about-text p2 {
-    color: rgb(252 , 229, 205);
-    font-size: 25px;
-    font-weight: 800;
-}
-.about-text p2:hover {
-    text-shadow: 0 0 8px rgba(252,229,205,.9);
-}
-
-.portrait-image {
+.ack-image {
     margin-left: 100px;
     margin-top: 50px;
 }
 
-.portrait-image img {
+.ack-image img {
     width: 350px;      
     height: auto; 
     margin: 0 auto;
     transition: 0.4s ease;
 }
 
-.portrait-image img:hover {
+.ack-image img:hover {
     transform: scale(110%);
 }
 
-/* SOCIALS STYLING */
+.ack {
+    background: rgb(92, 51, 23);
+    padding: 60px;
+    width: 100%;
+    
+}
+
+.ack h2{
+    color: rgb(252 , 229, 205);
+    font-size: 50px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 300px;
+}
+
+
+
+/* ------------------- SOCIALS STYLING ------------------- */
 
 #socials {
     background-color: rgb(92, 51, 23);
-    width: 100vw;
+    width: 100%;
     height: 50vh;
-    margin-top: -160px;
     padding: 50px;
 }
 
@@ -336,9 +356,12 @@ a:hover {
     font-size: 25px;
 }
 
-.social-title h3 {
+.social-title h2{
     color: rgb(252 , 229, 205);
-    font-size: 30px;
+    font-size: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .insta-button {
@@ -363,15 +386,18 @@ a:hover {
     border-radius: 50%;
 }
 
-/* FOOTER STYLING */
+
+/* ------------------- FOOTER STYLING ------------------- */
 
 footer {
-    position: absolute;
-    padding-top: 5px;
+    margin-top: auto;
+    position: relative;
+    padding: 10px;    
     text-align: center;
-    width: 100vw;
-    height: 5vh;
+    width: 100%;
     background: rgb(252 , 229, 205);
 }
 
-
+footer p {
+    margin: 0;
+}

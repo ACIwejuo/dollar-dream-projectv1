@@ -14,6 +14,10 @@ body {
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;      /* hides accidental overspill */
+    margin: 0;
 }
 
 /* TRANSITION */
@@ -86,9 +90,10 @@ button.logo img:hover {
 
 .top-header {
     position: fixed;
+    height: 150px;
     display: flex;
-    width: 100vw;
-    background: transparent;
+    width: 100%;
+    background: rgba(92, 51, 23, 0.4);
     transition: background 0.3s ease;
     z-index: 1000;
     gap: 70px;
@@ -128,11 +133,12 @@ a {
 
 /* Effect of the Navigation Text when Hovering over with Cursor*/
 a:hover {
-    text-shadow: 0 0 8px rgba(252 , 229, 205,.9);
-    text-decoration: underline;
-    text-underline-offset: 1rem; 
-    transform: scale(105%);
+  text-shadow: 0 0 8px rgba(205, 208, 252, .9);
+  text-decoration: underline;
+  text-underline-offset: 3px;   /* much closer */
+  transform: scale(105%);
 }
+
 
 /* WHILE THE PAGE IS ACTIVE, BOLDEN ITS NAV MENU*/
 .nav-links a.active {
@@ -245,21 +251,16 @@ a:hover {
 
 /* --------------------  MOTIVATION  --------------------------*/
 #gallery {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    position: relative;
-    margin-bottom: 150px;
+    height: 110vh;
     background: rgb(252 , 229, 205);
-    top: -10px;
-}
+    display: block;
+    padding: 80px;
 
-.gallery-content {
-    padding-bottom: 10px;
 }
-
 
 .image-wrapper {
     max-width: 600px;
+    width: 100%;
     margin: 0 auto 35px;
     padding: 0;
     overflow: hidden;

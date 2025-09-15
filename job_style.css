@@ -139,11 +139,12 @@ a {
 
 /* Effect of the Navigation Text when Hovering over with Cursor*/
 a:hover {
-    text-shadow: 0 0 8px rgba(205 , 208, 252,.9);
-    text-decoration: underline;
-    text-underline-offset: 1rem; 
-    transform: scale(105%);
+  text-shadow: 0 0 8px rgba(205, 208, 252, .9);
+  text-decoration: underline;
+  text-underline-offset: 3px;   /* much closer */
+  transform: scale(105%);
 }
+
 
 /* WHILE THE PAGE IS ACTIVE, BOLDEN ITS NAV MENU*/
 .nav-links a.active {
@@ -442,7 +443,7 @@ a:hover {
 /* ------------------- EXTRAS STYLING ------------------- */
 #extras {
     background: rgb(252 , 229, 205);
-    height: 120vh;
+    height: 100vh;
 }
 
 .videos {
@@ -478,17 +479,18 @@ a:hover {
     color: rgb(92, 51, 23);
 }
 
-    .links {
-    text-align: center;
-    padding: 80px;
-    gap: 40px;
+.links {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
     
 }
 
 .link-button,
 .indeed-button {
     width: 80px;
-    margin: 0 50px;     
     height: auto;
     background: none;
     border-radius: 0%;
@@ -504,6 +506,7 @@ a:hover {
     transition: 0.2s ease;
 }
 
+
 .link-button img:hover,
 .indeed-button img:hover {
     transform: scale(110%);
@@ -511,13 +514,19 @@ a:hover {
     border-radius: 50%;
 }
 
+.board-names {
+    padding: 10px;
+    text-align: center;
+}
+
+
 
 /* ------------------- SOCIALS STYLING ------------------- */
 
 #socials {
     background-color: rgb(92, 51, 23);
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     padding: 50px;
 }
 

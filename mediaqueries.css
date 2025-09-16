@@ -12,7 +12,20 @@
   #hamburger-nav { display: flex; }
 
   .hamburger-icon {
+    margin-top: -25px;
     margin-left: 680px;
+  }
+
+  .main-logo img {
+    width: 25%;
+    height: auto;
+    transition: 0.4s ease;
+    margin-top: -50px;
+  }
+
+  .main-text {
+    top: 325px;
+    font-size: 25px;
   }
 
   button.logo img {
@@ -25,14 +38,32 @@
     height: 100px;
   }
 
+  .top-header.scrolled {
+    background: rgb(92, 51, 23);
+    width: 100vw;
+    height: 100px;
+  }
+
+  .menu-links.open {
+    top: 30px;
+    margin-left: 350px;
+  }
+
 
 
   .daily-landing-image img {
     width: 100%;
   }
   
+  .about-text {
+    margin-top: 110px;
+  }
 
+  .about-text p {
+    font-size: 20px;
+  }
 }
+
 
 
 /* PHONE */

@@ -36,11 +36,12 @@ button.logo {
     border: none;       
     outline: none;     
     padding: 0;
-    margin-left: 50px;   
+    margin-left: 50px; 
+    margin-top: 15px;  
 }
 
 button.logo img {
-    width: 150px;
+    width: 120px;
     height: auto;
     transition: 0.4s ease;
 }

@@ -1,10 +1,20 @@
 @media only screen and (max-width: 798px) {
 
-  #desktop-nav { display: none; }
-  #hamburger-nav { display: block; }
+  /* Navigation */
+  #desktop-nav {
+    display: none;
+  }
 
+  #hamburger-nav {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 1.5rem;
+  }
+
+  /* General layout */
   body, html {
-    overflow-x: hidden;      /* hides accidental overspill */
+    overflow-x: hidden;
   }
 
   .logo img {
@@ -20,15 +30,76 @@
     background: rgb(92, 51, 23);
   }
 
-  #hamburger-nav {
-    display: block;
+  .main-logo {
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 20%;
-    right: 1.5rem;        
+    z-index: 2;
+  }
+
+  .main-logo img {
+    width: 70%;
+    height: auto;
+  }
+
+  .main-text {
+    top: 50%;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .main-text p {
+    font-size: 0.75rem;
+    text-align: center;
   }
 
   .landing-image {
     position: relative;
+    top: 11rem;
   }
 
+  .landing-image img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  /* About Section */
+  #about {
+    position: relative;
+    margin-top: 10rem;
+    width: 100%;
+    background: rgb(114, 68, 40);
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .about-section {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    color: rgb(252, 229, 205);
+    padding: 1rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .portrait-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .portrait-image img {
+    max-width: 100%;
+    height: auto;
+  }
 }

@@ -1,5 +1,8 @@
 @media only screen and (max-width: 798px) {
 
+
+  /* -----------------  HOME PAGE  -----------------  */
+
   /* Navigation */
   #desktop-nav {
     display: none;
@@ -8,8 +11,24 @@
   #hamburger-nav {
     display: block;
     position: absolute;
-    top: 20%;
+    top: 1rem;
     right: 1.5rem;
+    z-index: 1100;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+
+  .hamburger-icon span {
+    height: 2px;
+    background-color: rgb(252, 229, 205);
+    width: 100%;
   }
 
   /* General layout */
@@ -17,11 +36,15 @@
     overflow-x: hidden;
   }
 
-  .logo img {
-    width: 4.25rem;
+  .logo {
     position: relative;
     top: 0.5rem;
     left: -2.5rem;
+  }
+
+  .logo img {
+    width: 4.25rem;
+    height: auto;
   }
 
   .top-header {
@@ -30,11 +53,18 @@
     background: rgb(92, 51, 23);
   }
 
+  #hamburger-nav {
+  position: fixed !important;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 2000; /* make sure it's above the top-header */
+  }
+
   .main-logo {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 20%;
+    top: 15%;
     z-index: 2;
   }
 
@@ -44,62 +74,207 @@
   }
 
   .main-text {
-    top: 50%;
+    top: 45%;
     z-index: 2;
     text-align: center;
   }
 
-  .main-text p {
+  .main-text p1 {
     font-size: 0.75rem;
     text-align: center;
   }
 
   .landing-image {
+    top: 10rem;
     position: relative;
     top: 11rem;
   }
 
   .landing-image img {
-    width: 100%;
+    width: 180%;
     height: auto;
     margin-left: 0;
   }
 
   /* About Section */
   #about {
-    position: relative;
-    margin-top: 10rem;
+    display: block;
     width: 100%;
     background: rgb(114, 68, 40);
-    height: auto;
-    padding-bottom: 2rem;
+    margin-top: 10rem;
+    margin-left: 0rem;
+  }
+
+  .about-title h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(252, 229, 205);
   }
 
   .about-section {
     width: 100%;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .about-text {
-    color: rgb(252, 229, 205);
-    padding: 1rem;
-  }
-
-  .about-text p {
-    font-size: 1rem;
-    text-align: center;
+    display: block;
   }
 
   .portrait-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    padding: 2rem;
+    margin: 0;
   }
 
   .portrait-image img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
   }
+
+  .about-text {
+    color: rgb(252, 229, 205);
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-text p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .about-text p2 {
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  #section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .social-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+
+  .social-text p {
+    font-size: 0.9rem;
+  }
+
+  .insta-button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;    
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+
+
+
+  /* -----------------  DAILY MOTIVATION PAGE  -----------------  */
+  .daily-title {
+    position: relative;
+    top: 2rem;
+    left: 0;
+    top: 12rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    z-index: 10;
+    border: rgb(252 , 229, 205) 0.01rem solid;
+    
+  }
+
+  .daily-title h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  .daily-landing-image {
+    position: relative;
+    top: 3rem;
+    margin: 0 auto;
+  }
+
+  .daily-landing-image img {
+    width: 180%;
+    height: auto;
+    margin-left: -8rem;
+  }
+
+  #gallery {
+    padding: 0;
+    width: 100%;
+  }
+
+  .image-wrapper {
+    margin-top: 6rem;
+  }
+
+  .image-list .image-link .gallery-image {
+    border-radius: 0px;
+  } 
+
+  .social-title h2 {
+    font-size: 2rem;
+  }
+
+  /* -----------------  FINANCE TIPS PAGE  -----------------  */
+
+
+  .finance-title {
+    position: relative;
+    top: 2rem;
+    left: 0;
+    top: 10rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    z-index: 10;
+    border: rgb(252 , 229, 205) 0.01rem solid;
+    
+  }
+
+  .finance-title h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .finance-landing-image {
+    position: relative;
+    top: -4rem;
+    margin: 0 auto;
+  }
+
+  .finance-landing-image img {
+    width: 180%;
+    height: auto;
+    margin-left: -8rem;
+  }
+
+
+ 
 }

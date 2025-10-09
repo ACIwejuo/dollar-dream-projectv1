@@ -213,20 +213,20 @@ a:hover {
 
 /* -------------------   LANDING IMAGES -----------------------*/
 
-.landing-image img {
+.finance-landing-image img {
     margin-top: -110px;
     width: 100%;
     height: auto;
 
 }
-.landing-image {
+.finance-landing-image {
     margin: 0 auto;
 }
 
 /* -------------------   INFO SECTION 1 STYLING -------------------*/ 
 #info-one {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     background: rgb(252 , 229, 205);
 }
@@ -395,7 +395,7 @@ a:hover {
 /* -------------------   INFO SECTION 2 STYLING -------------------*/ 
 #info-two {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: -150px;
     display: flex;
     background: rgb(252 , 229, 205);
@@ -604,7 +604,7 @@ a:hover {
 #pop-quiz {
     background-color: rgb(114, 68, 40);
     width: 100%;
-    height: 80vh;
+    min-height: 100vh;
     padding: 50px;
 }
 

@@ -125,7 +125,7 @@ nav {
 /* Color of the Navigation Text */
 a {
     color: rgb(252 , 229, 205);
-    font-size: 1rem;
+    font-size: 1.125rem;
     text-decoration: none;
     text-decoration-color: white;
     transition: 0.4s ease;

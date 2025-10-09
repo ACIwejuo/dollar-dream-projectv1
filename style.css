@@ -119,13 +119,13 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Color of the Navigation Text */
 a {
-    color: rgb(252 , 229, 205);;
-    font-size: 1.125rem;
+    color: rgb(252 , 229, 205);
+    font-size: 1rem;
     text-decoration: none;
     text-decoration-color: white;
     transition: 0.4s ease;
